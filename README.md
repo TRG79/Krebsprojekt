@@ -1,13 +1,10 @@
-# Krebsprojekt
-Anti-Krebs-Superformel
----
+# Anti-Krebs-Superformel Projektseite
 
-## Formelstruktur (vereinfacht):
+Dies ist die Projektwebsite zur visionären Anti-Krebs-Formel. Sie basiert auf Naturstoffen, RNA-Technologie, Immuntherapie und Genregulation.
 
-- mRNA gegen Tumor-spezifische Neoantigene  
-- siRNA & CRISPR zur Deaktivierung mutierter Onkogene (z. B. KRAS, TP53)  
-- Immunaktivierung (Anti-PD-1 + CpG-Oligos)  
-- Pflanzenstoffe mit wissenschaftlich belegter Tumorhemmung  
-- Lipidnanopartikel als Transportträger
+## Veröffentlichen mit GitHub Pages
 
-> Die vollständige Strukturformel ist im wissenschaftlichen Konzeptpapier enthalten und kann auf Anfrage zur Verfügung gestellt werden.
+1. Repository erstellen (z. B. `krebsprojekt`)
+2. Datei `index.html` hochladen
+3. In den Repository-Einstellungen -> Pages -> Quelle auf `main` und `/root` stellen
+4. Die Seite ist dann z. B. unter `https://TRG79.github.io/krebsprojekt` erreichbar
