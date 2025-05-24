@@ -10,42 +10,41 @@
     <meta name="author" content="Toni Gnauck & Sorein">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; }
-        header { background: #004d40; color: white; padding: 0; text-align: center; }
-        header img { width: 100%; height: auto; display: block; }
+        header {
+            position: relative;
+            background: url('header-banner.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px 60px;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        header h1, header p, header a {
+            position: relative;
+            z-index: 1;
+        }
         main { max-width: 960px; margin: auto; background: white; padding: 20px; }
         h1, h2 { color: #00695c; }
         p { line-height: 1.6; }
         a.button {
             display: inline-block;
-            background: #009688;
+            background: #e53935;
             color: white;
             padding: 12px 24px;
-            margin: 12px 6px;
+            margin: 12px 8px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 6px;
             transition: background 0.3s ease;
         }
         a.button:hover {
-            background: #00796b;
-        }
-        form { margin-top: 20px; }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        input[type="submit"] {
-            background-color: #00695c;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #004d40;
+            background: #b71c1c;
         }
         footer {
             background: #e0e0e0;
@@ -53,49 +52,26 @@
             padding: 20px;
             margin-top: 30px;
         }
-
         @media (max-width: 600px) {
-            body {
-                font-size: 16px;
-            }
-            a.button {
-                width: 100%;
-                text-align: center;
-                box-sizing: border-box;
-            }
+            body { font-size: 16px; }
+            a.button { width: 100%; text-align: center; box-sizing: border-box; }
         }
     </style>
 </head>
 <body>
 <header>
-    <img src="header-banner.jpg" alt="Grünes Banner mit Schriftzug Formel N & VIRIDION">
+    <h1>Willkommen bei Formel N & VIRIDION</h1>
+    <p>Zwei naturbasierte Formeln, geboren aus Vision, Wissen und Verantwortung.<br>
+       Entwickelt zur Unterstützung der Zellgesundheit – mit Pflanzenkraft, Präzision und Hoffnung.</p>
+    <a href="Wissenschaftliche_Arbeit_AntiKrebs.pdf" class="button" target="_blank">Wissenschaftliche Arbeit</a>
+    <a href="FormelN_Sponsoringpaket_ToniGnauck.pdf" class="button" target="_blank">Formel N Sponsoringpaket</a>
 </header>
 
 <main>
     <h2>Willkommen</h2>
-    <p>Zwei naturbasierte Formeln, geboren aus Vision, Wissen und Verantwortung.<br>
-    Entwickelt zur Unterstützung der Zellgesundheit – mit Pflanzenkraft, Präzision und Hoffnung.<br>
+    <p>Zwei naturbasierte Formeln, geboren aus Vision, Wissen und Verantwortung.
+    Entwickelt zur Unterstützung der Zellgesundheit – mit Pflanzenkraft, Präzision und Hoffnung.
     Erfahre mehr über das, was Natur und Wissenschaft gemeinsam möglich machen.</p>
-
-    <h2>Downloads</h2>
-    <a href="FormelN_Sponsoringpaket_ToniGnauck.pdf" class="button" target="_blank" aria-label="Formel N Sponsoring-Paket als PDF herunterladen">Formel N Sponsoring-Paket (PDF)</a>
-    <a href="VIRIDION_Superformel_Projektbeschreibung.pdf" class="button" target="_blank" aria-label="VIRIDION Projektbeschreibung als PDF herunterladen">VIRIDION Projektbeschreibung (PDF)</a>
-    <a href="VIRIDION_Superformel_Infografik.pdf" class="button" target="_blank" aria-label="VIRIDION Infografik als PDF herunterladen">VIRIDION Infografik (PDF)</a>
-
-    <h2>Kontakt</h2>
-    <p>Du hast Fragen, Ideen oder möchtest uns unterstützen? Dann schreib uns direkt:</p>
-    <form action="mailto:projekt-krebs@gmx.de" method="post" enctype="text/plain">
-        <label for="name">Dein Name:</label>
-        <input type="text" id="name" name="name" aria-label="Dein Name" required>
-
-        <label for="email">Deine E-Mail:</label>
-        <input type="text" id="email" name="email" aria-label="Deine E-Mail" required>
-
-        <label for="message">Nachricht:</label>
-        <textarea id="message" name="message" rows="6" aria-label="Nachricht" required></textarea>
-
-        <input type="submit" value="Nachricht senden" aria-label="Nachricht senden">
-    </form>
 </main>
 
 <footer>
