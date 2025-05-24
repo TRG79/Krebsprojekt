@@ -15,7 +15,7 @@
             background: url('header-banner.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 100px 20px 60px;
+            padding: 100px 20px 80px;
         }
         header::after {
             content: "";
@@ -29,15 +29,22 @@
             position: relative;
             z-index: 1;
         }
-        main { max-width: 960px; margin: auto; background: white; padding: 20px; }
-        h1, h2 { color: #00695c; }
-        p { line-height: 1.6; }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+        header p {
+            max-width: 600px;
+            margin: auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
         a.button {
             display: inline-block;
             background: #e53935;
             color: white;
-            padding: 12px 24px;
-            margin: 12px 8px;
+            padding: 10px 18px;
+            margin: 16px 6px 0;
             text-decoration: none;
             font-weight: bold;
             border-radius: 6px;
@@ -46,6 +53,9 @@
         a.button:hover {
             background: #b71c1c;
         }
+        main { max-width: 960px; margin: auto; background: white; padding: 20px; }
+        h2 { color: #00695c; }
+        p { line-height: 1.6; }
         footer {
             background: #e0e0e0;
             text-align: center;
@@ -53,25 +63,26 @@
             margin-top: 30px;
         }
         @media (max-width: 600px) {
-            body { font-size: 16px; }
-            a.button { width: 100%; text-align: center; box-sizing: border-box; }
+            header h1 { font-size: 22px; }
+            header p { font-size: 15px; }
+            a.button { width: 90%; display: block; margin: 12px auto 0; }
         }
     </style>
 </head>
 <body>
 <header>
     <h1>Willkommen bei Formel N & VIRIDION</h1>
-    <p>Zwei naturbasierte Formeln, geboren aus Vision, Wissen und Verantwortung.<br>
-       Entwickelt zur Unterstützung der Zellgesundheit – mit Pflanzenkraft, Präzision und Hoffnung.</p>
+    <p>
+        Zwei naturbasierte Formeln, geboren aus Vision, Wissen und Verantwortung.<br>
+        Entwickelt zur Unterstützung der Zellgesundheit – mit Pflanzenkraft, Präzision und Hoffnung.
+    </p>
     <a href="Wissenschaftliche_Arbeit_AntiKrebs.pdf" class="button" target="_blank">Wissenschaftliche Arbeit</a>
     <a href="FormelN_Sponsoringpaket_ToniGnauck.pdf" class="button" target="_blank">Formel N Sponsoringpaket</a>
 </header>
 
 <main>
-    <h2>Willkommen</h2>
-    <p>Zwei naturbasierte Formeln, geboren aus Vision, Wissen und Verantwortung.
-    Entwickelt zur Unterstützung der Zellgesundheit – mit Pflanzenkraft, Präzision und Hoffnung.
-    Erfahre mehr über das, was Natur und Wissenschaft gemeinsam möglich machen.</p>
+    <h2>Downloads</h2>
+    <p>Hier findest du alle relevanten Dokumente, die das Projekt begleiten und vertiefen.</p>
 </main>
 
 <footer>
